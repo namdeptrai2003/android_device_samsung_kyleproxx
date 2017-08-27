@@ -6,7 +6,7 @@ $(call inherit-product, device/samsung/kyleproxx/device_kyleproxx.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := kyleproxx
-PRODUCT_NAME := lineage_kyleproxx
+PRODUCT_NAME := uos_kyleproxx
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := GT-S758x

@@ -1,4 +1,4 @@
-# LineageOS-14.1 Device tree for Samsung GT-S7582/GT-S7580 (kyleprods/kylepro)
+# COSMICOS-7.1.z Device tree for Samsung GT-S7582/GT-S7580 (kyleprods/kylepro)
 
 ### Specs (Physically inspected):
   - CPU: Cortex-A9 (Little endian, Dual Core)
@@ -19,7 +19,9 @@
   - WIFI/Bluetooth/FM-Radio: BCM4330
 
 ### Notice:
-  - Apply patch *PATCH_CM-14.1.diff* to root directory of LOS-14.1 source code before build
+  - Apply patch *COS 7.1.z patches.diff* to root directory of LOS-14.1 source code before build
+  
+    patch -p1 < device/samsung/kylepro/COS\ 7.1.z\ patches.diff
 
 ### Other resource:
   - Kernel source: https://github.com/ishantvivek/android_kernel_samsung_kyleproxx

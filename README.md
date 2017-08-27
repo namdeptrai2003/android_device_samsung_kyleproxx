@@ -22,7 +22,7 @@
   - Apply patch *VERTEX 7.1.x patches.diff* to root directory of LOS-14.1 source code before build
   
   
-    patch -p1 < device/samsung/kylepro/VERTEX\ 7.1.x\ patches.diff
+    patch -p1 < device/samsung/kyleproxx/VERTEX\ 7.1.x\ patches.diff
 ### Other resource:
   - Kernel source: https://github.com/ishantvivek/android_kernel_samsung_kyleproxx
   - Vendor blobs: https://github.com/ishantvivek/android_vendor_samsung_kyleproxx

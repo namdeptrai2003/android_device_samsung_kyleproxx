@@ -14,9 +14,10 @@
 
 # Inherit device configuration and AquariOS stuff
 $(call inherit-product, device/samsung/kyleproxx/device_kyleproxx.mk)
-$(call inherit-product, vendor/aquarios/config/common_full_phone.mk)
 
-## Device identifier. This must come after all inclusions
+# Include AquariOS telephony configuration
+include vendor/aquarios/configs/aquarios_phone.mk
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := kyleproxx
 PRODUCT_NAME := aquarios_kyleproxx

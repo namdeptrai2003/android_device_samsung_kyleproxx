@@ -744,28 +744,6 @@ diff -ur a/hardware/broadcom/libbt/src/userial_vendor.c b/hardware/broadcom/libb
 +
      userial_ioctl_init_bt_wake(vnd_userial.fd);
  #endif
- 
-diff -ur a/packages/apps/CMParts/src/org/cyanogenmod/cmparts/input/ButtonSettings.java b/packages/apps/CMParts/src/org/cyanogenmod/cmparts/input/ButtonSettings.java
---- a/packages/apps/CMParts/src/org/cyanogenmod/cmparts/input/ButtonSettings.java	2017-05-10 17:13:01.914826638 +0000
-+++ b/packages/apps/CMParts/src/org/cyanogenmod/cmparts/input/ButtonSettings.java	2017-05-10 17:25:08.194371428 +0000
-@@ -262,7 +262,6 @@
-         // Only visible on devices that does not have a navigation bar already,
-         // and don't even try unless the existing keys can be disabled
-         boolean needsNavigationBar = false;
--        if (hardware.isSupported(CMHardwareManager.FEATURE_KEY_DISABLE)) {
-             try {
-                 IWindowManager wm = WindowManagerGlobal.getWindowManagerService();
-                 needsNavigationBar = wm.needsNavigationBar();
-@@ -277,9 +276,6 @@
-                 mNavigationPreferencesCat.setEnabled(mDisableNavigationKeys.isChecked());
-                 updateDisableNavkeysCategories(mDisableNavigationKeys.isChecked());
-             }
--        } else {
--            prefScreen.removePreference(mDisableNavigationKeys);
--        }
- 
-         if (hasPowerKey) {
-             if (!TelephonyUtils.isVoiceCapable(getActivity())) {
 diff -ur a/packages/inputmethods/LatinIME/java-overridable/src/com/android/inputmethod/latin/define/JniLibName.java b/packages/inputmethods/LatinIME/java-overridable/src/com/android/inputmethod/latin/define/JniLibName.java
 --- a/packages/inputmethods/LatinIME/java-overridable/src/com/android/inputmethod/latin/define/JniLibName.java	2017-04-14 15:25:57.169786285 +0000
 +++ b/packages/inputmethods/LatinIME/java-overridable/src/com/android/inputmethod/latin/define/JniLibName.java	2017-05-10 17:26:50.026663297 +0000

@@ -1,3 +1,3 @@
-for i in eng userdebug user; do
-    add_lunch_combo lineage_kyleproxx-${i}
-done
+add_lunch_combo aquarios_kyleproxx-userdebug
+add_lunch_combo aquarios_kyleproxx-user
+add_lunch_combo aquarios_kyleproxx-eng

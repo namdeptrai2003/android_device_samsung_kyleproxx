@@ -1,9 +1,4 @@
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
-
-# Inherit device configuration
-$(call inherit-product, device/samsung/kyleproxx/device_kyleproxx.mk)
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017 The AquariOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +12,8 @@ $(call inherit-product, device/samsung/kyleproxx/device_kyleproxx.mk)
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/htc/pme/full_pme.mk)
+# Inherit device configuration and AquariOS stuff
+$(call inherit-product, device/samsung/kyleproxx/device_kyleproxx.mk)
 $(call inherit-product, vendor/aquarios/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions

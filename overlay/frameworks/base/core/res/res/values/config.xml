@@ -133,8 +133,8 @@
         <item>255</item>
     </integer-array>
 
-    <!-- Hawaii doesn't handle this blur effect very quickly. -->
-    <bool name="config_sf_slowBlur">true</bool>
+    <!-- Hawaii doesn't handle this blur effect very quickly.
+    <bool name="config_sf_slowBlur">true</bool> -->
 
     <!-- The default iface on which to monitor data use -->
     <string name="config_datause_iface">rmnet0</string>
@@ -164,8 +164,8 @@
     <integer name="config_soundEffectVolumeDb">-12</integer>
 
     <!-- Timeout in MS for how long you have to long-press the back key to
-         kill the foreground app. -->
-    <integer name="config_backKillTimeout">1700</integer>
+         kill the foreground app. 
+    <integer name="config_backKillTimeout">1700</integer>-->
 
     <!-- Hardware 'face' keys present on the device, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -176,8 +176,8 @@
              8 - Assistant (search)
             16 - App switch
          For example, a device with Home, Back and Menu keys would set this
-         config to 7. -->
-    <integer name="config_deviceHardwareKeys">7</integer>
+         config to 7.
+    <integer name="config_deviceHardwareKeys">7</integer> -->
 
     <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -261,7 +261,7 @@
     <bool name="config_sim_phonebook_batch_operation">false</bool>
 
     <!-- If enabled, capacitive keys will only light up when pressed.
-         Otherwise, the buttons will light up whenever the user interacts with the device -->
-    <bool name="config_buttonLightOnKeypressOnly">true</bool>
+         Otherwise, the buttons will light up whenever the user interacts with the device 
+    <bool name="config_buttonLightOnKeypressOnly">true</bool> -->
 
 </resources>

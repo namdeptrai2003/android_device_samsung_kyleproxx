@@ -8,7 +8,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/xos/config/common.mk)
 
 PRODUCT_NAME := XOS_kyleproxx
-PRODUCT_DEVICE := oneplus2
+PRODUCT_DEVICE := kyleproxx
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_BRAND := samsung
 

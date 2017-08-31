@@ -485,6 +485,20 @@ on post-fs
     chown radio system /efs
     chmod 0771 /efs
 
+# Bluetooth
+on property:wc_transport.start_root=true
+     start hci_filter_root
+ 
+on property:wc_transport.start_root=false
+     stop hci_filter_root
+ 
+ service hci_filter_root /system/bin/wcnss_filter
+     class late_start
+     user bluetooth
+     group bluetooth diag system
+     disabled
+ 
+
 # Create filesystem if necessary
     service setup_fs /system/bin/setup_fs \
                 /dev/block/mmcblk0p15 \
@@ -501,7 +515,7 @@ on post-fs
         group system
 
 # RILD
-    service ril-daemon /system/bin/rild
+    service ril-daemon /vendor/bin/hw/rild
         class main
         socket rild stream 660 root radio
         socket rild1 stream 660 root radio

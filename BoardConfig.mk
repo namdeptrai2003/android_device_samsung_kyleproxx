@@ -185,5 +185,5 @@ TARGET_SPECIFIC_HEADER_PATH                 := device/samsung/kyleproxx/include
 # Dex-preoptimization
 WITH_DEXPREOPT := false
 # SELinux
-BOARD_SEPOLICY_DIRS += \
-    device/samsung/kyleproxx/sepolicy
+#BOARD_SEPOLICY_DIRS += \
+    #device/samsung/kyleproxx/sepolicy

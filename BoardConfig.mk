@@ -36,7 +36,7 @@ endif
 TARGET_KERNEL_SOURCE                        := kernel/samsung/kyleproxx
 
 # Kernel toolchain
-KERNEL_TOOLCHAIN                            := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin
+KERNEL_TOOLCHAIN                            := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin
 KERNEL_TOOLCHAIN_PREFIX                     := arm-eabi-
 
 # Releasetools
@@ -181,6 +181,9 @@ BOARD_HARDWARE_CLASS                        := hardware/samsung/cmhw/
 # GPS
 TARGET_SPECIFIC_HEADER_PATH                 := device/samsung/kyleproxx/include
 
+
+# Dex-preoptimization
+WITH_DEXPREOPT := false
 # SELinux
 BOARD_SEPOLICY_DIRS += \
     device/samsung/kyleproxx/sepolicy

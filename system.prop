@@ -23,6 +23,9 @@ debug.hwui.render_dirty_regions=false
 ro.tvout.enable=false
 gralloc.use_sync_mode=true
 
+#low audio flinger standby delay to reduce power consumption
+ro.audio.flinger_standbytime_ms=300
+
 # Adative video encoding
 video.enc.h264.adaptive_quality=1
 video.enc.h264.timing_window_sz=4

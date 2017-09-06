@@ -36,7 +36,7 @@ endif
 TARGET_KERNEL_SOURCE                        := kernel/samsung/kyleproxx
 
 # Kernel toolchain
-KERNEL_TOOLCHAIN                            := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin
+KERNEL_TOOLCHAIN                            := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin
 KERNEL_TOOLCHAIN_PREFIX                     := arm-eabi-
 
 # Releasetools
@@ -49,7 +49,7 @@ TARGET_KERNEL_HAVE_NTFS                     := true
 # Partition size
 BOARD_BOOTIMAGE_PARTITION_SIZE              := 8388608
 # //Fake Values to workaround build
-BOARD_RECOVERYIMAGE_PARTITION_SIZE          := 10279424
+BOARD_RECOVERYIMAGE_PARTITION_SIZE          := 19420224
 # //
 BOARD_SYSTEMIMAGE_PARTITION_SIZE            := 1200283648
 BOARD_SYSTEMIMAGE_JOURNAL_SIZE              := 0

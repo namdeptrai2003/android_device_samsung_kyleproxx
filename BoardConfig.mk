@@ -184,3 +184,5 @@ TARGET_SPECIFIC_HEADER_PATH                 := device/samsung/kyleproxx/include
 # SELinux
 BOARD_SEPOLICY_DIRS += \
     device/samsung/kyleproxx/sepolicy
+  
+BLOCK_BASED_OTA    := false 

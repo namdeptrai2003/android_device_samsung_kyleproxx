@@ -5,7 +5,7 @@ $(call inherit-product, vendor/hexagon/configs/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/kyleprods/device_kyleproxx.mk)
+$(call inherit-product, device/samsung/kyleproxx/device_kyleproxx.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := kyleproxx
